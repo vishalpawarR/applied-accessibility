@@ -140,3 +140,26 @@ Here's an example:
 - Time to take a break from Camper Cat and meet fellow camper Zersiax (@zersiax), a champion of accessibility and a screen reader user. To hear a clip of his screen reader in action, add an `audio` element after the `p`. Include the `controls` attribute. Then place a `source` tag inside the `audio` tags with the `src` attribute set to "https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" and `type` attribute set to "audio/mpeg".
 
 > Note: The audio clip may sound fast and be difficult to understand, but that is a normal speed for screen reader users.
+
+## 10 - Improve Chart Accessibility with the figure Element :
+
+- HTML5 introduced the `figure` element, along with the related `figcaption`. Used together, these items wrap a visual representation (like an image, diagram, or chart) along with its caption. This gives a two-fold accessibility boost by both semantically grouping related content, and providing a text alternative that explains the `figure`.
+
+- For data visualizations like charts, the caption can be used to briefly note the trends or conclusions for users with visual impairments. Another challenge covers how to move a table version of the chart's data off-screen (using CSS) for screen reader users.
+
+- Here's an example - note that the `figcaption` goes inside the `figure` tags and can be combined with other elements:
+
+```html
+<figure>
+  <img
+    src="roundhouseDestruction.jpeg"
+    alt="Photo of Camper Cat executing a roundhouse kick"
+  />
+  <br />
+  <figcaption>
+    Master Camper Cat demonstrates proper form of a roundhouse kick.
+  </figcaption>
+</figure>
+```
+
+- Camper Cat is hard at work creating a stacked bar chart showing the amount of time per week to spend training in stealth, combat, and weapons. Help him structure his page better by changing the `div` tag he used to a `figure` tag, and the `p` tag that surrounds the caption to a `figcaption` tag.
