@@ -95,3 +95,13 @@ Camper Cat has coded a skeleton page for the blog part of his website. He's plan
 ```
 
 - Camper Cat used `article` tags to wrap the posts on his blog page, but he forgot to use them around the top one. Change the `div` tag to use an `article` tag instead.
+
+## 6 - Make Screen Reader Navigation Easier with the header Landmark :
+
+- The next HTML5 element that adds semantic meaning and improves accessibility is the `header` tag. It's used to wrap introductory information or navigation links for its parent tag and works well around content that's repeated at the top on multiple pages.
+
+- `header` shares the embedded landmark feature you saw with `main`, allowing assistive technologies to quickly navigate to that content.
+
+> Note: The `header` is meant for use in the `body` tag of your HTML document. This is different than the `head` element, which contains the page's title, meta information, etc.
+
+- Camper Cat is writing some great articles about ninja training, and wants to add a page for them to his site. Change the top `div` that currently contains the `h1` to a `header` tag instead.
